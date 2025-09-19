@@ -990,73 +990,6 @@ var {
     font-weight: 600;
 }
 
-/* Figure y diagramas - CORRECCIÓN PARA BLOG */
-figure {
-    margin: 2rem 0;
-    padding: 0;
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-figcaption {
-    font-weight: 600;
-    margin: 0;
-    color: var(--primary-color);
-    background-color: var(--light-bg);
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-/* Pre - código general */
-pre {
-    background-color: var(--primary-color);
-    color: var(--white) !important;
-    padding: 1rem;
-    border-radius: 4px;
-    overflow-x: auto;
-    font-family: 'Courier New', monospace;
-    margin: 0;
-}
-
-/* Pre dentro de figure - diagramas DEFINITIVO */
-figure pre {
-    background-color: #2c3e50 !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 0 !important;
-    font-size: 0.95rem !important;
-    line-height: 1.4 !important;
-    font-weight: normal !important;
-    white-space: pre !important;
-    font-family: 'Courier New', 'Monaco', monospace !important;
-    padding: 1.5rem !important;
-    margin: 0 !important;
-}
-
-/* Forzar colores en todo el contenido del pre */
-figure pre,
-figure pre *,
-figure code,
-figure code * {
-    color: #ffffff !important;
-    background-color: #2c3e50 !important;
-}
-
-/* Pre en posts regulares (no en figure) */
-.post-text pre {
-    background-color: var(--primary-color) !important;
-    color: var(--white) !important;
-    border-radius: 4px;
-    margin: 1rem 0;
-}
-
-.post-text pre code {
-    background-color: transparent !important;
-    color: var(--white) !important;
-}
-
 /* Responsive para posts con video */
 @media (max-width: 768px) {
     .post-content-with-video {
@@ -1065,7 +998,7 @@ figure code * {
     }
     
     .post-video {
-        order: -1; /* Video arriba en móviles */
+        order: -1; 
     }
 }
 
