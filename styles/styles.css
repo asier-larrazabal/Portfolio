@@ -348,10 +348,11 @@ details p {
     background-color: var(--light-bg);
 }
 
+/* Figure y diagramas - Corrección definitiva */
 figure {
     margin: 2rem 0;
-    padding: 1rem;
-    background-color: var(--light-bg);
+    padding: 0;
+    background-color: transparent;
     border-radius: 4px;
 }
 
@@ -359,8 +360,14 @@ figcaption {
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--primary-color);
+    background-color: var(--light-bg);
+    padding: 1rem;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
 }
 
+/* Pre - código general */
 pre {
     background-color: var(--primary-color);
     color: var(--white);
@@ -368,7 +375,32 @@ pre {
     border-radius: 4px;
     overflow-x: auto;
     font-family: 'Courier New', monospace;
+    margin: 0;
 }
+
+/* Pre dentro de figure - diagramas específicos */
+figure pre {
+    background-color: #1e2832;
+    color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 4px 4px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    white-space: pre;
+    font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+    text-shadow: none;
+}
+
+/* Asegurar visibilidad del texto en diagramas */
+figure pre code {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0;
+    font-size: inherit;
+}
+
+
 
 code {
     font-family: 'Courier New', monospace;
