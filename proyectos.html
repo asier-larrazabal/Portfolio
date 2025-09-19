@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de desarrollo de videojuegos en Unity con ML-Agents">
+    <title>Proyectos - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation">
+            <div class="logo">
+                <h1><abbr title="Game Developer">Asier Larrazabal's</abbr> Portfolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="proyectos.html" class="nav-link active">Proyectos</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Mis Proyectos</h2>
+        
+        <section class="project-showcase">
+            <article class="project-detail" id="vehiculo-ia">
+                <header class="project-header">
+                    <h3>Sistema de Conducción IA</h3>
+                    <p class="project-meta">
+                        <time datetime="2024-06">Junio 2024</time> | 
+                        <span class="project-status">Completado</span>
+                    </p>
+                </header>
+                
+                <div class="project-content">
+                    <p>Desarrollo de un controlador de vehículo inteligente que utiliza <strong>ML-Agents</strong> 
+                    para aprender patrones de conducción realistas. El sistema incluye:</p>
+                    
+                    <ul>
+                        <li>Física vehicular avanzada</li>
+                        <li>Sistema de sensores para IA</li>
+                        <li>Entrenamiento por refuerzo</li>
+                        <li>Optimización de trayectorias</li>
+                    </ul>
+
+                    <table class="tech-stack">
+                        <caption>Tecnologías Utilizadas</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Tecnología</th>
+                                <th scope="col">Versión</th>
+                                <th scope="col">Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Unity</td>
+                                <td>2023.2</td>
+                                <td>Motor principal</td>
+                            </tr>
+                            <tr>
+                                <td>ML-Agents</td>
+                                <td>2.0</td>
+                                <td>Entrenamiento IA</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>3.8</td>
+                                <td>Scripts de entrenamiento</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <figure>
+                        <figcaption>Diagrama del sistema de sensores</figcaption>
+                        <pre><code>
+Vehículo
+├── Sensores Frontales (5x)
+├── Sensores Laterales (4x)
+└── Sensor de Velocidad
+                        </code></pre>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="project-detail" id="npc-ia">
+                <header class="project-header">
+                    <h3>NPCs Inteligentes</h3>
+                    <p class="project-meta">
+                        <time datetime="2024-08">Agosto 2024</time> | 
+                        <span class="project-status">En desarrollo</span>
+                    </p>
+                </header>
+                
+                <div class="project-content">
+                    <p>Sistema de NPCs que adaptan su comportamiento basándose en las acciones del jugador.</p>
+                    
+                    <h4>Características Principales</h4>
+                    <ol>
+                        <li>Reconocimiento de patrones de juego</li>
+                        <li>Adaptación dinámica de dificultad</li>
+                        <li>Comportamientos emergentes</li>
+                        <li>Sistema de memoria persistente</li>
+                    </ol>
+
+                    <blockquote>
+                        <p>Los NPCs no solo reaccionan, sino que aprenden y evolucionan con cada interacción.</p>
+                        <cite>- Filosofía de diseño del proyecto</cite>
+                    </blockquote>
+                </div>
+            </article>
+        </section>
+
+        <aside class="project-sidebar">
+            <h3>Filtros</h3>
+            <form class="filter-form">
+                <fieldset>
+                    <legend>Categorías</legend>
+                    <label><input type="checkbox" name="categoria" value="ia"> Inteligencia Artificial</label>
+                    <label><input type="checkbox" name="categoria" value="fisica"> Física</label>
+                    <label><input type="checkbox" name="categoria" value="ui"> Interfaz</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Estado</legend>
+                    <label><input type="radio" name="estado" value="todos" checked> Todos</label>
+                    <label><input type="radio" name="estado" value="completados"> Completados</label>
+                    <label><input type="radio" name="estado" value="desarrollo"> En desarrollo</label>
+                </fieldset>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <address>
+                <p>Contacto: <a href="mailto:asier.larrazabal@opendeusto.es">asier.larrazabal@opendeusto.es</a></p>
+                <p>Teléfono: <a href="tel:+34688854198">+34 688 854 198</a></p>
+            </address>
+            <small>&copy; 2024 Asier Larrazabal Portfolio. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog técnico sobre desarrollo de videojuegos, Unity y ML-Agents">
+    <title>Blog - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation">
+            <div class="logo">
+                <h1><abbr title="Game Developer">Asier Larrazabal's</abbr> Portfolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Blog Técnico</h2>
+        
+        <section class="blog-posts">
+            <article class="blog-post">
+                <header class="post-header">
+                    <h3>Optimizando ML-Agents para Móviles</h3>
+                    <p class="post-meta">
+                        Publicado el <time datetime="2024-09-15">15 de Septiembre, 2024</time>
+                        por <span class="author">Admin</span>
+                    </p>
+                </header>
+                
+                <div class="post-content">
+                    <p>En este tutorial exploramos técnicas avanzadas para optimizar modelos de ML-Agents 
+                    en dispositivos móviles sin sacrificar la calidad de la <abbr title="Inteligencia Artificial">IA</abbr>.</p>
+                    
+                    <h4>Temas Cubiertos</h4>
+                    <ul>
+                        <li>Reducción de complejidad de modelos</li>
+                        <li>Cuantización de pesos</li>
+                        <li>Optimización de memoria</li>
+                    </ul>
+
+                    <p>La clave está en encontrar el equilibrio entre <em>rendimiento</em> y <em>calidad</em>.</p>
+                </div>
+                
+                <footer class="post-footer">
+                    <p>Etiquetas: 
+                        <span class="tag">ML-Agents</span>
+                        <span class="tag">Optimización</span>
+                        <span class="tag">Móvil</span>
+                    </p>
+                </footer>
+            </article>
+
+            <article class="blog-post">
+                <header class="post-header">
+                    <h3>Física Realista en Unity: Controladores de Vehículos</h3>
+                    <p class="post-meta">
+                        Publicado el <time datetime="2024-08-22">22 de Agosto, 2024</time>
+                        por <span class="author">Admin</span>
+                    </p>
+                </header>
+                
+                <div class="post-content">
+                    <p>Guía completa para implementar sistemas de física vehicular que ofrezcan 
+                    una experiencia de conducción auténtica.</p>
+                    
+                    <blockquote cite="https://docs.unity3d.com/Manual/WheelCollider.html">
+                        "El WheelCollider es una extensión especial del collider estándar"
+                    </blockquote>
+
+                    <h4>Conceptos Clave</h4>
+                    <ol>
+                        <li>Centro de masa y distribución de peso</li>
+                        <li>Configuración de suspensión</li>
+                        <li>Curvas de fricción de neumáticos</li>
+                        <li>Sistemas de transmisión</li>
+                    </ol>
+
+                    <pre><code>
+// Ejemplo de configuración básica
+wheelCollider.motorTorque = motor * motorForce;
+wheelCollider.brakeTorque = brake * brakeForce;
+                    </code></pre>
+                </div>
+                
+                <footer class="post-footer">
+                    <p>Etiquetas: 
+                        <span class="tag">Unity</span>
+                        <span class="tag">Física</span>
+                        <span class="tag">Vehículos</span>
+                    </p>
+                </footer>
+            </article>
+        </section>
+
+        <aside class="blog-sidebar">
+            <section class="widget">
+                <h3>Categorías</h3>
+                <ul class="category-list">
+                    <li><a href="#ia">Inteligencia Artificial <span class="count">(5)</span></a></li>
+                    <li><a href="#unity">Unity Tips <span class="count">(8)</span></a></li>
+                    <li><a href="#optimizacion">Optimización <span class="count">(3)</span></a></li>
+                    <li><a href="#tutoriales">Tutoriales <span class="count">(12)</span></a></li>
+                </ul>
+            </section>
+
+            <section class="widget">
+                <h3>Archivo</h3>
+                <ul class="archive-list">
+                    <li><a href="#2024-09">Septiembre 2024 <span class="count">(2)</span></a></li>
+                    <li><a href="#2024-08">Agosto 2024 <span class="count">(4)</span></a></li>
+                    <li><a href="#2024-07">Julio 2024 <span class="count">(3)</span></a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <address>
+                <p>Contacto: <a href="mailto:asier.larrazabal@opendeusto.es">asier.larrazabal@opendeusto.es</a></p>
+                <p>Teléfono: <a href="tel:+34688854198">+34 688 854 198</a></p>
+            </address>
+            <small>&copy; 2024 Asier Larrazabal Portfolio. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>

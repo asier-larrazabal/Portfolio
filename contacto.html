@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta conmigo para proyectos de desarrollo de videojuegos">
+    <title>Contacto - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation">
+            <div class="logo">
+                <h1><abbr title="Game Developer">Asier Larrazabal's</abbr> Portfolio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Contacto</h2>
+        
+        <section class="contact-section">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <address class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:asier.larrazabal@opendeusto.es">asier.larrazabal@opendeusto.es</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+34688854198">+34 688 854 198</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/asier-larrazabal-gómez-84447332a" target="_blank">linkedin.com/in/asier.larrazabal</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/asier-larrazabal" target="_blank">github.com/asier-larrazabal</a></p>
+                </address>
+
+                <h4>Horario de Disponibilidad</h4>
+                <table class="availability-table">
+                    <caption>Horarios de trabajo</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes - Viernes</td>
+                            <td>9:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábados</td>
+                            <td>10:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingos</td>
+                            <td>Cerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Formulario de Contacto</h3>
+                <form class="contact-form" action="#" method="post">
+                    <fieldset class="personal-info">
+                        <legend>Información Personal</legend>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50" placeholder="Tu nombre completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+34 123 456 789">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Empresa/Organización</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="project-info">
+                        <legend>Información del Proyecto</legend>
+                        
+                        <div class="form-group">
+                            <label for="tipo-proyecto">Tipo de proyecto *</label>
+                            <select id="tipo-proyecto" name="tipo-proyecto" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="juego-movil">Juego Móvil</option>
+                                <option value="juego-pc">Juego PC</option>
+                                <option value="prototipo">Prototipo</option>
+                                <option value="consultoria">Consultoría</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presupuesto">Presupuesto estimado</label>
+                            <input type="range" id="presupuesto" name="presupuesto" min="1000" max="50000" step="1000" value="10000">
+                            <output for="presupuesto">10000€</output>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha-inicio">Fecha de inicio preferida</label>
+                            <input type="date" id="fecha-inicio" name="fecha-inicio" min="2024-10-01">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgencia">Nivel de urgencia</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="urgencia" value="baja"> Baja</label>
+                                <label><input type="radio" name="urgencia" value="media" checked> Media</label>
+                                <label><input type="radio" name="urgencia" value="alta"> Alta</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="message-info">
+                        <legend>Mensaje</legend>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <input type="text" id="asunto" name="asunto" required maxlength="100" placeholder="Breve descripción del proyecto">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Descripción detallada *</label>
+                            <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="1000" rows="6" placeholder="Describe tu proyecto, objetivos, tecnologías específicas, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adjunto">Adjuntar documento (opcional)</label>
+                            <input type="file" id="adjunto" name="adjunto" accept=".pdf,.doc,.docx,.txt">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="preferences">
+                        <legend>Preferencias</legend>
+                        
+                        <div class="form-group">
+                            <label>Servicios de interés:</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="servicios" value="desarrollo"> Desarrollo completo</label>
+                                <label><input type="checkbox" name="servicios" value="consultoria"> Consultoría técnica</label>
+                                <label><input type="checkbox" name="servicios" value="optimizacion"> Optimización</label>
+                                <label><input type="checkbox" name="servicios" value="ia"> Implementación IA</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="si">
+                                Suscribirse al newsletter técnico
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="privacidad" value="acepto" required>
+                                Acepto la política de privacidad *
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">Enviar Mensaje</button>
+                        <button type="reset" class="reset-button">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <address>
+                <p>Contacto: <a href="mailto:asier.larrazabal@opendeusto.es">asier.larrazabal@opendeusto.es</a></p>
+                <p>Teléfono: <a href="tel:+34688854198">+34 688 854 198</a></p>
+            </address>
+            <small>&copy; 2024 Asier Larrazabal Portfolio. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
