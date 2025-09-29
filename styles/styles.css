@@ -14,28 +14,39 @@
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ---------- TIPOGRAFÍA Y GENERALES --------- */
+/* Configuracion General y Tipografia */
 body {
   font-family: var(--font-family);
   color: var(--text-color);
   background: var(--light-bg);
-  line-height: 1.6;
-}
+  line-height: 1.6;}
 h1, h2, h3, h4 { color: var(--primary-color);}
 ul, ol { padding-left: 1.5em; }
-a { color: var(--secondary-color); text-decoration: none;}
+a { 
+    color: var(--secondary-color); 
+    text-decoration: none;}
 a:hover { text-decoration: underline; }
-mark { background: #fff3cd; border-radius: 2px; padding: 0 .3em;}
+mark { 
+    background: #fff3cd; 
+    border-radius: 2px; 
+    padding: 0 .3em;}
 code, pre, kbd, samp {
   font-family: 'Courier New', monospace;
   background: #2c3e50; color: #fff;
   border-radius: 4px;
 }
-pre { padding: 1rem; overflow-x: auto; }
-figure pre { background: #1e2832; font-size: 1rem; padding: 1.5rem;}
-var { color: var(--accent-color); font-style: italic; }
+pre { 
+    padding: 1rem; 
+    overflow-x: auto; }
+figure pre { 
+    background: #1e2832; 
+    font-size: 1rem; 
+    padding: 1.5rem;}
+var { 
+    color: var(--accent-color); 
+    font-style: italic; }
 
-/* ---------------- LAYOUT PRINCIPAL -------------- */
+/* Layout Principal */
 
 .main-header, .main-footer {
   background: var(--primary-color);
@@ -72,49 +83,56 @@ var { color: var(--accent-color); font-style: italic; }
   color: var(--white);
 }
 .logo {
-  display: flex; align-items: center; gap: 1rem;
-}
-.logo-image { width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1);}
-.logo h1 { font-size: 1.5rem; font-weight: 700;}
-.nav-menu { display: flex; list-style: none; gap: 2rem;}
+  display: flex; 
+  align-items: center; 
+  gap: 1rem;}
+.logo-image { 
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+    filter: brightness(0) invert(1);}
+.logo h1 { 
+    font-size: 1.5rem; 
+    font-weight: 700;}
+.nav-menu { 
+    display: flex; 
+    list-style: none; 
+    gap: 2rem;}
 .nav-link {
-  color: var(--white); padding: 0.5rem 1rem; border-radius: 4px;
-  transition: background 0.3s;
-}
+  color: var(--white); 
+  padding: 0.5rem 1rem; 
+  border-radius: 4px;
+  transition: background 0.3s;}
 .nav-link:hover, .nav-link.active { background: var(--secondary-color); }
 
-/*----------- HERO ---------*/
+/* Hero */
 .hero-section {
   text-align: center;
   padding: 4rem 0;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: var(--white);
   border-radius: 8px;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem;}
 .hero-content h2 { font-size: 3rem; margin-bottom: 1rem; }
 .hero-subtitle { font-size: 1.2rem; margin-bottom: 2rem; }
 .cta-button {
   background: var(--accent-color); color: var(--white);
   padding: 1rem 2rem; border-radius: 6px; font-weight: 600;
   transition: background .3s, transform .3s;
-  text-decoration: none; display: inline-block;
-}
+  text-decoration: none; display: inline-block;}
 .cta-button:hover { background: var(--primary-color); transform: translateY(-2px); }
 
 .hero-section blockquote {
   font-style: italic;
   border-left: 4px solid var(--accent-color);
   background: rgba(255,255,255,0.1);
-  margin: 2rem 0; padding: 1rem; border-radius: 4px;
-}
+  margin: 2rem 0; padding: 1rem; border-radius: 4px;}
 
 
-/* ---------- SECCIONES CON GRID --------- */
+/* Secciones con Grid */
 .about-section, .project-showcase, .contact-section, .post-content-with-video {
   display: grid;
-  gap: 2rem;
-}
+  gap: 2rem;}
 
 .about-section { grid-template-columns: 2fr 1fr; margin-bottom: 3rem;}
 .skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 0.5rem; list-style: none;}
@@ -145,7 +163,7 @@ var { color: var(--accent-color); font-style: italic; }
 }
 .tech-stack caption, .availability-table caption { font-weight: 600; color: var(--primary-color);}
 
-/* ----------- BLOG Y WIDGETS -------------- */
+/*  Blog y Widgets  */
 .blog-post { margin-bottom: 2rem; }
 .post-content-with-video { grid-template-columns: 2fr 1fr; }
 .post-meta { color: var(--text-color); opacity: 0.7; margin-bottom: 1.5rem; font-size: .9rem;}
@@ -159,7 +177,7 @@ var { color: var(--accent-color); font-style: italic; }
 .category-list a:hover, .archive-list a:hover { color: var(--secondary-color);}
 .count { color: var(--text-color); opacity: .6; font-size: .9rem;}
 
-/* ------------ FORMULARIO ------------- */
+/* Formulario */
 .contact-section { grid-template-columns: 1fr 2fr;}
 .form-group { margin-bottom: 1.2rem;}
 .form-group label { font-weight: 600;}
@@ -186,7 +204,7 @@ legend { font-weight: 600; color: var(--primary-color);}
 .contact-details a { color: var(--secondary-color);}
 .contact-details a:hover { text-decoration: underline;}
 
-/* ----------- VÍDEOS EMBED ----------- */
+/* Formato de Videos */
 .video-container-post {
   position: relative; width: 100%; padding-bottom: 56.25%; height: 0;
   border-radius: 6px; overflow: hidden; margin-bottom: .5rem;
@@ -197,7 +215,7 @@ legend { font-weight: 600; color: var(--primary-color);}
 }
 .video-caption { text-align: center; color: var(--text-color); font-weight: 600; font-size: .9rem;}
 
-/* ----------- FIGURE Y DETAILS ---------- */
+/* Detalles */
 figure { margin: 2rem 0; background: var(--white);}
 figcaption { font-weight: 600; color: var(--primary-color); background: var(--light-bg); padding: 1rem;}
 details { margin: 1rem 0; border: 1px solid var(--border-color); border-radius: 4px;}
